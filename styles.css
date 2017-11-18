@@ -1,0 +1,106 @@
+/* Adapted from: https://codepen.io/visualcookie/pen/kkwxPm */
+/* reference colors 
+  --background: #f5f6fa;
+  --text: #9c9c9c;
+  --input-bg-color: #fff;
+  --input-text-color: #a3a3a3;
+  --button-bg-color: #7f8ff4;
+  --button-text-color: #fff;
+*/
+
+/* root */
+:root {
+  background: #f5f6fa;
+	color: #9c9c9c;
+	font: 1rem "PT Sans", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: #7f8ff4;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* button */
+.btn {
+	display: inline-block;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+}
+	
+.btn--primary {
+	background: #7f8ff4;
+	color: #fff;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+	border-radius: 2px;
+	padding: 12px 36px;
+}
+
+.btn:hover {
+	background: darken(#7f8ff4, 4%);
+}
+		
+.btn:active {
+	background: #7f8ff4;
+	box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+	
+.btn--inside {
+	margin-left: -96px;
+}
+
+
+/* form */
+.form__field {
+		width: 30em;
+		background: #fff;
+/*		color: #a3a3a3; */
+		font: inherit;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+		border: 0;
+		outline: 0;
+		padding: 22px 18px;
+}
+
+.footer {
+  height: 50px;
+  margin-top: -50px;
+}
+
+.footer-table {
+  width: 100%;
+}
+
+#resultado {
+  text-align: left;
+  color: black;
+}
