@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mensajes Secretos usando el Código Genético</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <a href="https://github.com/fbitti/mensajes-secretos-codigo-genetico"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    <div class="container">
+      
+      <h3>
+        Crea tu Mensaje Secreto con el mismo Código Genético que tu cuerpo usa para fabricar proteínas.
+      </h3>
+      
+      <form class="form">
+        <input id="mensaje" type="text" class="form__field" placeholder="teclea aquí tu mensaje" autofocus onkeydown="handlers.esEnter()">
+        <button id="escribir" type="button" class="btn btn--primary uppercase" onclick="handlers.escribir()">Generar</button>
+        <button id="descifrar" type="button" class="btn btn--primary uppercase" onclick="handlers.leer()">Descifrar</button>
+      </form>
+      
+      <div id="resultado">
+      </div>
+      
+      <script src="/script.js" defer></script>
+      
+    </div>
+    
+    <footer class="footer">
+      <table class="footer-table">
+        <tr>
+          <th>Inspirado en el libro <a href="http://bigvanciencia.com/productos/como-explicar-genetica-y-evolucion-con-un-dragon-mutante">"Cómo Explicar Genética con un Dragón Mutante"</a> de Big Van Científicos sobre Ruedas.</th>
+          <th><a href="saber-mas.html">¿En qué se basa esto?</a></th>
+        </tr>
+      </table>
+    </footer>
+    
+  </body>
+</html>
